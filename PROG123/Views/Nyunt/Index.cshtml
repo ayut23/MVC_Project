@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NyuntLayout.cshtml";
+}
+
+@model PROG123.Models.LogInCredentialsModel;
+
+<form id="loginForm" asp-action="LogIn" method="post">
+	<div class="inputwrap">
+		<label>Name:</label>
+		<input asp-for="UserName" class="roundCorners" required size="15" onclick="value='jdane'"/></br>
+	</div>
+	<div class="inputwrap">
+		<label> Password:</label>
+		<input asp-for="UserPassword" class="roundCorners" required size="15" onclick="value='abc123'"/></br>
+	</div>
+	<div class="inputwrap">
+		<label><button type="submit"> Log In </button></label>
+		<label style="color:red;">@ViewBag.LoginMessage</label>
+	</div>
+</form>

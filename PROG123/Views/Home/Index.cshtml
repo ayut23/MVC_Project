@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>
+        Status of the connection string and DB Connection <br /><br />
+        Connection String:: @ViewBag.ConnStr
+        <br />
+        Database Connection:: @ViewBag.DBStatus
+    </h3>
+    <br />
+    <h3 style="color:red;">Exception:: @ViewBag.Exception</h3>
+    <br>
+</br>
+    @*linked first page of the homework*@
+
+    <a href="@Url.Action("firstPage","Home")">Go to firstPage of homework</a>
+    
+</body>
+</html>

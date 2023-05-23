@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+
+@model PersonModel
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Second Page</title>
+</head>
+<body>
+
+    @* <h1> Hello world</h1> *@
+
+@*Mapped information stored in Person Model and Displayed*@
+
+<h2>Account Information</h2>
+<p>First Name: @Model.FName</p>
+<p>Last Name: @Model.LName</p>
+<p>Email: @Model.Email</p>
+<p>Phone: @Model.Phone</p>
+<p>Address: @Model.Address</p>
+<p>Username: @Model.UserName</p>
+<p>Password: @Model.Password</p>
+
+     <a href="@Url.Action("index","Home")">Go to index of homework</a><br></br>
+     <a href="@Url.Action("firstPage","Home")">Go to firstPage of homework</a><br></br>
+     <a href="@Url.Action("EditPerson","Home")">Go to Edit Person</a>
+     <a href="@Url.Action("DeletePerson","Home")"> Delete Person</a>
+</body>
+</html>

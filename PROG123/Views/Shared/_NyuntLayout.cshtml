@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+   <link href="~/css/NyuntCSS.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+       @* <img src="~/images/vader.png"></img> *@
+        <br></br>
+        <p id="headerText"> Welcome @ViewBag.UserFirstName </p>
+    </header>
+    
+
+    <div id="content">
+        <article>
+            @RenderBody()
+        </article>
+
+        <nav >
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li><a href="@Url.Action("ListAllProducts","Nyunt")">Show Products</a></li>
+                    <li><a href="@Url.Action("EnterNewProduct","Nyunt")">Add Products</a></li>
+                    <li><a href="@Url.Action("Index","Home")">Sign Up</a></li>
+               </ul>
+          </nav>
+    </div>
+
+ 
+    <footer>
+        copy right Khant Nyunt
+    </footer>
+</body>
+</html>

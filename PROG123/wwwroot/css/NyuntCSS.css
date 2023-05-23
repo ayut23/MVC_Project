@@ -1,0 +1,51 @@
+﻿
+body {
+}
+
+p {
+    padding: 10px;
+}
+
+#content {
+    float: left;
+    width: 100%;
+
+}
+
+header {
+    float: left;
+    height: 75px;
+    width: 100%;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+article {
+    background-color: lightgray;
+    margin-left: 155px;
+    border-radius: 10px;
+}
+
+nav {
+    float: left;
+    background-color: orange;
+    width: 150px;
+    border-radius: 10px;
+}
+
+footer {
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    background: #4cff00;
+    background-color: lightgreen;
+    clear: both;
+}
+
+ul {
+    margin: 4px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+

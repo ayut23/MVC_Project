@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/GrievousCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="~/images/grievous_banner.jpg" />
+        <br />
+        <p id="headerText">Welcome @ViewBag.UserFirstName</p>
+    </header>
+
+    <div id="content">
+        <article>
+            @RenderBody()
+        </article>
+    </div>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Shopping</li>
+            <li>About</li>
+            <li><a href="@Url.Action("ListAllProducts","Grievous")">Show Products</a></li>
+            <li><a href="@Url.Action("EnterNewProduct","Grievous")">Add Products</a></li>
+            <li><a href="@Url.Action("Index","Home")">SignUp</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        -contact  -partners   -bleh   -bleh
+    </footer>
+</body>
+</html>
